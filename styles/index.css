@@ -1,0 +1,74 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #F6F5F5;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 68px;
+    background-color: #1687A7;
+    color: #fff;
+}
+.nav-container img {
+    height: 45px;
+    margin-left: 12px;
+}
+.links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100vw;
+}
+.links-container li {
+    display: flex;
+    list-style: none;
+}
+.links-container li a {
+    text-decoration: none;
+    padding: 25px 30px;
+    color: #fff;
+}
+.links-container li a:hover {
+    background-color: #276678;
+}
+footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1687A7;
+    color: #fff;
+}
+footer p {
+    font-weight: bold;
+    padding: 10px;
+}
+.footer-love:hover {
+    color: rgb(255, 46, 46);
+}
+.redes-container {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.redes-dev {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.redes-dev i {
+    font-size: 24px;
+    color: #fff;
+}
+.redes-dev i:hover {
+    color: #276678;
+}
