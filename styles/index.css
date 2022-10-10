@@ -77,6 +77,141 @@ footer p {
     color: #276678;
 }
 
+.container__general {
+    width: 90%;
+    margin: auto;
+    box-shadow: 6px 0px 5px -5px #999,
+    -6px 0px 5px -5px #999;
+}
+.tematica__main h1 {
+    text-align: center;
+    padding: 20px;
+}
+.tematica__main h3 {
+    text-align: center;
+    font-size: 24px;
+}
+.tematica__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tematica__img {
+    display: flex;
+    align-self: center;
+    width: 70%;
+}
+.tematica__card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.tematica__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    background-color: #1687A7;
+    color:#fff;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+.tematica__card h2 {
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+}
+.tematica__card iframe {
+    border-radius: 10px;
+    width: 220px;
+    height: 125px;
+}
+.tematica__card iframe:hover {
+    z-index: 1;
+}
+.tematica__card img {
+    position: absolute;
+    width: 220px;
+    height: 125px;
+    object-fit: cover;
+    top: 48px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+.tematica__card img:hover {
+    z-index: -1;
+    opacity: 0;
+}
+
+.tematica__card p {
+    padding: 15px 20px;
+    font-style: italic;
+}
+.tematica__maps-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.tematica__maps-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #D3E0EA;
+    margin: 20px;
+    border-radius: 10px;
+    width: 40vw;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+
+}
+.tematica__maps-card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tematica__maps-card-content li {
+    list-style: none;
+    padding: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+.tematica__maps-card-content li:hover {
+    background-color: #1687A7;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+.tematica__maps-card iframe {
+    border-radius: 50%;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.tematica__maps-card h4 {
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    .tematica__maps-card {
+        min-width: 250px;
+    }
+    .tematica__maps-card-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tematica__maps-card-content li {
+        text-align: center;
+    }
+}
+
 /* START INFORMATION OF THE PEOPLES */
 /* 
 .content__info{
@@ -225,4 +360,4 @@ footer p {
     font-size: 13px;
 }
 /* END PAGE ABOUT */
-/* COMMIT AL REPO */
+=======
