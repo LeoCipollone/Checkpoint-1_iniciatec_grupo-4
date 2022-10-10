@@ -1,0 +1,413 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --crema: #F6F5F5;
+    --gris: #D3E0EA;
+    --azul-claro: #1687A7;
+    --azul-oscuro: #276678;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--crema);
+    overflow-x: hidden;
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* ## BIENVENIDA ## */
+
+.freePage-welcome{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.freePage-welcome video{
+    width: 100%;
+    z-index: 1;
+}
+ 
+.freePage-welcome div{
+    position: absolute;
+    z-index: 99;
+}
+
+.freePage-welcome h1{
+    padding: 10px;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px var(--azul-oscuro);
+}
+
+.freePage-welcome span{
+    font-size: 30px;
+    font-style: italic;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.freePage-welcome div ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.freePage-welcome div ul a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 8px;
+    color: var(--azul-claro);
+    background-color: var(--crema);
+    border: 1px solid var(--azul-claro);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 3px 3px 0 var(--azul-claro);
+    margin: 22px;
+}
+
+.freePage-welcome div ul a:hover{ /* esto no lo toma tampoco */
+    color: var(--crema);
+    background-color: var(--azul-claro);
+    box-shadow: 3px 3px 0 var(--crema);
+}
+
+/* ## CURIOSIDADES ## */
+
+#freePage-curiosidades,
+#freePage-exoticos,
+#freePage-mascotas,
+.freePage-peliculas{
+    margin: 35px 0;
+}
+
+.containerGeneral-curiosidades{
+    width: 90%;
+    margin: auto;
+    box-shadow: 6px 0px 5px -5px #999, -6px 0px 5px -5px #999;
+}
+
+.containerGeneral-curiosidades article{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.article-rigth figure{
+    order: 2;
+}
+
+.article-rigth .curiosidades_boxInfo{
+    order: 1;
+}
+
+.containerGeneral-curiosidades figure{
+    width: 35%;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.containerGeneral-curiosidades figcaption,
+.containerGeneral-exoticos figcaption{
+    background-color: var(--azul-claro);
+    text-align: center;
+    color: var(--crema);
+    padding: 8px 0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.curiosidades_boxInfo{
+    width: 65%;
+}
+
+.curiosidades_info{
+    height: fit-content;
+    padding: 10px 20px;
+    background-color: var(--gris);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.curiosidades_info h3{
+    color: var(--azul-oscuro);
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.curiosidades_info span{
+    font-weight: bold;
+}
+
+.curiosidades-elefantes{
+    background-image: url(../assets/images/freePage-imgs/elefante.jpeg);
+    background-position: center center;
+}
+
+.curiosidades-jirafas{
+    background-image: url(../assets/images/freePage-imgs/jirafa.webp);
+    background-position: center center;
+}
+
+.curiosidades-ballenas{
+    background-image: url(../assets/images/freePage-imgs/ballena.jpeg);
+    background-position: -175px center;
+}
+
+/* ## ANIMALES EXÓTICOS ## */
+.freePage-exoticos__p,
+.freePage-mascotas__p{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    border: 3px solid var(--azul-claro);
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.containerGeneral-exoticos{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.containerGeneral-exoticos article{
+    width: 30%;
+    background-color: var(--azul-claro);
+    padding: 24px;
+    margin: 40px 20px 30px;
+    color: var(--crema);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.containerGeneral-exoticos article figure{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px 5px 0 0;
+    background-size: cover;
+}
+
+.containerGeneral-exoticos article figcaption{
+    background-color: var(--crema);
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+
+.containerGeneral-exoticos article p{
+    text-align: center;
+    color: #000;
+    background-color: var(--gris);
+    border-radius: 0 0 5px 5px;
+    padding: 14px;
+}
+
+.containerGeneral-exoticos article span{
+    font-weight: bold;
+}
+
+.exoticos-macacos{
+    background-image: url(../assets/images/freePage-imgs/macacos.jpeg);
+    background-position: center center;
+}
+
+.exoticos-patoMandarin{
+    background-image: url(../assets/images/freePage-imgs/patoMandarin.jpg);
+    background-position: -10px 35px;
+}
+
+.exoticos-ligre{
+    background-image: url(../assets/images/freePage-imgs/ligre.jpg);
+    background-position: center 30px;
+}
+
+.exoticos-pangolin{
+    background-image: url(../assets/images/freePage-imgs/pangolin.jpeg);
+    background-position: center 24px;
+}
+
+.exoticos-fenec{
+    background-image: url(../assets/images/freePage-imgs/fenec.jpg);
+    background-position: center 20px;
+}
+
+.exoticos-delfin{
+    background-image: url(../assets/images/freePage-imgs/delfin.jpg);
+    background-position: center center;
+}
+
+/* ## MASCOTAS ## */
+
+.freePage-mascotas__p span{
+    display: block;
+}
+
+.containerGeneral-mascotas{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.containerGeneral-mascotas article{
+    width: 28%;
+    height: 400px;
+    margin-top: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+}
+
+.containerGeneral-mascotas article div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerGeneral-mascotas article div p{
+    color: var(--crema);
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(107, 107, 107, 0.2);
+    margin-bottom: 16px;
+}
+
+.containerGeneral-mascotas article:hover{
+    transform: scale(1.02);
+    transition: 0.4s;
+}
+
+.mascotas__texto-emergente{
+    display: none;
+    width: 80%;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    background-color: rgba(107, 107, 107, 0.6);
+    border-radius: 20px;
+}
+
+.containerGeneral-mascotas article:hover div{
+    display: none;
+    transition: 0.2s;
+}
+
+.containerGeneral-mascotas article:hover .mascotas__texto-emergente{
+    display: block;
+    transition: 0.2s;
+}
+
+.mascotas__proteccion{
+    background: linear-gradient(217deg, rgba(68,67,67,0.1) 50%, rgba(46,45,45,0.8) 100%), url(../assets/images/freePage-imgs/proteccion.jpeg);
+}
+
+.mascotas__amor{
+    background: linear-gradient(217deg, rgba(68,67,67,0.1) 50%, rgba(46,45,45,0.8) 100%), url(../assets/images/freePage-imgs/perro-amor.jpg);
+}
+
+.mascotas__alimentacion{
+    background: linear-gradient(217deg, rgba(68,67,67,0.1) 50%, rgba(46,45,45,0.8) 100%), url(../assets/images/freePage-imgs/alimentacion2.webp);
+}
+
+.mascotas__ejercicio{
+    background: linear-gradient(217deg, rgba(68,67,67,0.1) 50%, rgba(46,45,45,0.8) 100%), url(../assets/images/freePage-imgs/ejercicio.jpeg);
+}
+
+.mascotas__baño{
+    background: linear-gradient(217deg, rgba(68,67,67,0.1) 50%, rgba(46,45,45,0.8) 100%), url(../assets/images/freePage-imgs/baño.jpg);
+}
+
+.mascotas__identificacion{
+    background: linear-gradient(217deg, rgba(68,67,67,0.1) 50%, rgba(46,45,45,0.8) 100%), url(../assets/images/freePage-imgs/identificacion.jpg);
+}
+
+/* ## PELICULAS ## */
+.freePage-peliculas div:first-child{
+    margin-top: 65px;
+    height: 200px;
+    background: linear-gradient( rgba(68,67,67,0.5) 0%, rgba(46,45,45,0.6) 100%), url(../assets/images/freePage-imgs/fondoPelis.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--azul-claro);
+}
+
+.freePage-peliculas div h2{
+    width: 100%;
+    color: var(--crema);
+    text-shadow: 2px 2px var(--azul-claro);
+    font-size: 60px;
+}
+
+.freePage-peliculas p{
+    text-align: center;
+    font-size: 20px;
+    margin: 30px;
+}
+
+.container-pelicula{
+    width: 80%;
+    height: 65vh;
+    margin: 30px auto;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--azul-oscuro);
+}
+
+.container-pelicula img{
+    width: 25%;
+}
+
+.container-pelicula_info{
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+}
+
+.genero{
+    width: fit-content;
+    font-size: 16px;
+    padding: 4px;
+    border: 1px solid var(--azul-oscuro);
+    border-radius: 5px;
+    margin-bottom: 6px;
+}
+
+.container-pelicula_info p{
+    text-align: left;
+    margin: 12px 0;
+    font-size: 16px;
+}
